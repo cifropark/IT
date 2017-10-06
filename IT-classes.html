@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>IT-classes</title>
+  <style>
+    @import url(reset.css);
+    body{
+      background-color: rgb(217,217,217);
+    }
+    .page{
+      width: 1380px;
+      margin: auto;
+      font-size: 0px;
+    }
+    section{
+      margin-top: 100px;
+      margin-right: 40px;
+      width: 240px;
+      display: inline-block;
+      vertical-align: top;
+      box-sizing: border-box;
+    }
+    section:last-child{
+      margin-right: 0;
+    }
+    div section:first-child{
+      width: 480px;
+    }
+    section>p{
+      font-size: 42px;
+      font-family: sans-serif;
+      font-weight: bold;
+      text-align: center;
+    }
+    .pic{
+      background-image: url(arrows.png);
+      height: 40px;
+      width: 40px;
+      background-repeat: no-repeat;
+      margin: auto;
+      margin-top: 50px;
+    }
+    .topic {
+      width: 110px;
+      line-height: 34px;
+      background-color: black;
+      color:white;
+      font-size: 26px;
+      font-family: sans-serif;
+      text-indent: 10px;
+      margin: 50px 0px 30px 0px;
+    }
+    .topic.pract {
+      width: 135px;
+    }
+     a{
+      display: block;
+      text-decoration: none;
+      color:black;
+      font-size: 18px;
+      font-family: sans-serif;
+      }
+      .theory > a{
+        margin: 0px 15px;
+      }
+      .practice a{
+        margin-bottom: 25px;
+      }
+    .theory{
+      display: flex;
+      justify-content: center;
+      }
+    .web-1,.web-2, .web-3, .web-4{
+      width: 160px;
+      text-align: center;
+      display: inline-block;
+      vertical-align: top;
+      }
+    .js > .theory, .pt > .theory, .c > .theory{
+      margin-top: 115px;
+    }
+    .js > .practice, .pt > .practice, .c > .practice{
+        margin-top: 110px;
+        text-align: center;
+    }
+  </style>
+</head>
+<body>
+  <div class="page">
+    <section class="web">
+      <p>Веб-дизайн</p>
+      <div class="pic"></div>
+
+      <p class="topic">Теория</p>
+      <div class="theory">
+        <a href="">1 год обучения</a>
+        <a href="">2 год обучения</a>
+        <a href="">3 год обучения</a>
+      </div>
+
+      <p class="topic pract">Практика</p>
+      <div class="practice">
+          <div class="web-1">
+            <a href="">группа 1.1</a>
+            <a href="">группа 1.2</a>
+            <a href="">группа 1.3</a>
+            <a href="">группа 1.4</a>
+          </div>
+          <div class="web-2">
+            <a href="">группа 2.1</a>
+            <a href="">группа 2.2</a>
+          </div>
+          <div class="web-3">
+            <a href="">группа 3</a>
+          </div>
+      </div>
+    </section>
+    <section class="js">
+      <p>JavaScript</p>
+      <div class="pic"></div>
+      <div class="theory">
+        <a href="">1 год обучения</a>
+      </div>
+      <div class="practice">
+        <a href="">группа 1</a>
+      </div>
+    </section>
+    <section class="pt">
+      <p>Python</p>
+      <div class="pic"></div>
+      <div class="theory">
+        <a href="">1 год обучения</a>
+      </div>
+      <div class="practice">
+        <a href="">группа 1</a>
+        <a href="">группа 2</a>
+        <a href="">группа 3</a>
+      </div>
+    </section>
+    <section class="c">
+      <p>C++</p>
+      <div class="pic"></div>
+      <div class="theory">
+        <a href="">1 год обучения</a>
+      </div>
+      <div class="practice">
+        <a href="">группа 1</a>
+        <a href="">группа 2</a>
+      </div>
+    </section>
+  </div>
+</body>
+</html>
